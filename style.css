@@ -1,0 +1,92 @@
+*,*::after,*::before
+{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+    background-color: rgb(242, 242, 242);
+}
+.container
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 15px;
+}
+.container .car1
+{
+    background-color: rgb(226, 133, 37);
+}
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap:5px;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+.center h2
+{
+    text-transform: uppercase;
+}
+.center span
+{
+    line-height: 28px;
+    margin-bottom: 70px;
+}
+.center button
+{
+    outline: none;
+    padding: 20px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: #fff;
+    
+}
+.center button:hover
+{
+    transform: scale(1.1);
+    color: #fff;
+    background: red;
+}
+.car1 .center button
+{
+    color: rgb(226, 133, 37);
+}
+.car2 .center button
+{
+    color: rgb(1, 105, 114);
+}
+.car3 .center button
+{
+    color: rgb(0, 64, 63);
+}
+.container .car2
+{
+    background-color: rgb(1, 105, 114);
+}
+.container .car3
+{
+    background-color: rgb(0, 64, 63);
+}
+@media only screen and (max-width: 600px){
+    .container
+    {
+        margin-top: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 2rem .5rem;
+    }
+}
